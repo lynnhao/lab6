@@ -53,7 +53,7 @@ function randomizeColors(e) {
 	console.log("User clicked on color button");
 
 
-	 	function getRandom(result) {
+	 function getRandom(result) {
 	 	console.log(result);
 		var step = result["colors"];
 		var colors = step["hex"];
