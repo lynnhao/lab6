@@ -52,9 +52,7 @@ function addProjectDetails(e) {
 function randomizeColors(e) {
 	console.log("User clicked on color button");
 
-		$("#colorBtn").click(function(e) {
-	 	$.get("/palette", getRandom);
-	 	
+
 	 	function getRandom(result) {
 	 	console.log(result);
 		var step = result["colors"];
@@ -68,6 +66,9 @@ function randomizeColors(e) {
 		$('.project img').css('opacity', .75);
 	 }
 
+		$("#colorBtn").click(function(e) {
+	 		$.get("/palette", getRandom);
+	 		console.log("/palette");
+	 	});
 
- 	});
-}
+ 	};
